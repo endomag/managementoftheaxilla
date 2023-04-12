@@ -29,6 +29,14 @@
       font-weight: 500;
       font-style: normal
     }
+      
+    @font-face {
+      font-family: 'ModernEra-Bold';
+      src: url("https://d17w171d8u6anl.cloudfront.net/ModernEra-Bold.eot#iefix");
+      src: url("https://d17w171d8u6anl.cloudfront.net/ModernEra-Bold.eot") format("eot"), url("https://d17w171d8u6anl.cloudfront.net/ModernEra-Bold.woff2") format("woff2"), url("https://d17w171d8u6anl.cloudfront.net/ModernEra-Bold.woff") format("woff");
+      font-weight: 700;
+      font-style: normal
+    } 
 
     /*DESKTOP/DEFAULT STYLES*/
 
@@ -40,19 +48,26 @@
         color: #0a2b53;
         background:#f5f5f5;
                 font-family: 'ModernEra-Regular', arial, helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
     }
+      
+      
       .background-set {
           background: #0a2b53;
          background: url(https://pardot.endomag.com/l/914031/2023-04-11/bzyggy/914031/1681209710FQsnH9tQ/london_scene.jpg) repeat-x;
  background-position: center center;
+      padding-bottom: 50px;
       }
+      
   
       .logo { float:left;
-      margin: 30px 40px;}
+      margin: 30px 30px;}
       
       .logo-img { width:100px;}
       
-      nav { margin-right:40px;
+      nav { margin-right:30px;
       }
       
       nav ul {
@@ -92,8 +107,13 @@ nav li a:hover {
       }
       
             header {
-          background:;      
+          background:#fff;
+                opacity:0.95;
+                max-width:760px;
+                width:85%;
+                margin: 0 auto;
                 clear: both;
+                border-radius:15px;
       }
       
       p {
@@ -102,13 +122,13 @@ nav li a:hover {
       }
 
     h1 {
-      font-family: 'ModernEra-Medium', arial, helvetica, sans-serif;
-      font-size: 30px;
+      font-family: 'ModernEra-Bold', arial, helvetica, sans-serif;
+      font-size: 22px;
       line-height: 1.2;
       text-decoration: none;
         text-transform: uppercase;
-    color:#fff;
-         text-shadow: 1px 1px #0a2b53;
+        letter-spacing:2px;
+    color:#FFBE46;
       text-align: center;
       font-weight: normal;
         margin: 0 auto;
@@ -116,10 +136,10 @@ nav li a:hover {
     }
 
     h2 {
-      font-family: 'ModernEra-Medium', arial, helvetica, sans-serif;
-    color:#fff;
-         text-shadow: 1px 1px #0a2b53;
-      font-size: 40px;
+      font-family: 'ModernEra-Bold', arial, helvetica, sans-serif;
+    color:#0a2b53;
+      font-size: 36px;
+    letter-spacing:-1px;
       line-height: 1.2;
       text-decoration: none;
       text-align: center;
@@ -129,16 +149,15 @@ nav li a:hover {
       }
       
       h4 {
-            font-family: 'ModernEra-Medium', arial, helvetica, sans-serif;
-          color: #fff;
-                   text-shadow: 1px 1px #0a2b53;
-      font-size: 24px;
+            font-family: 'ModernEra-Regular', arial, helvetica, sans-serif;
+          color: #666;
+      font-size: 20px;
       line-height: 1.2;
       text-decoration: none;
       text-align: center;
       font-weight: 500;
         margin: 0 auto;
-        padding: 5px 80px 80px;
+        padding: 5px 120px 40px;
       }
       
       h3 {
@@ -149,26 +168,54 @@ nav li a:hover {
       }
       
       .details {
-          background:#0a2b53;
-          color: #fff;
+          
+          color: #0a2b53;
           margin:0 auto;
           padding: 5px 0;
           text-align:center;
-          border-top:1px solid #fff;
-          border-bottom:1px solid #fff;
       }
       
       .details a {
-          color: #fff;
+          color: #0a2b53;
           text-decoration:none;
       }
       
+      .details p { line-height:1.5;font-family: 'ModernEra-Medium', arial, helvetica, sans-serif;}
+      
       .details a:hover {
-            color: #ddd;
-          border-bottom: 1px dotted #ddd;
+            color: #ffbe46;
+          border-bottom: 1px solid #0a2b53;
           padding-bottom: 3px;
       }
       
+       .content-navy-wrapper {
+          width:100%;
+          margin: 0 auto;
+          padding: 30px 0;
+          background:#0a2b53;
+      }
+      
+        .content-navy {
+          width:80%;
+          margin: 0 auto;
+          max-width:700px;
+          padding: 0;
+            text-align:center;
+      }
+      
+      .content-navy p {
+          font-size:18px;
+          line-height:1.4;
+          color: #fff;
+      }
+      
+         #meeting {
+        font-family: 'ModernEra-Medium', arial, helvetica, sans-serif;
+        font-size: 28px;
+        border-bottom: 0px solid #ffbe69;
+          padding: 0 0 0px;
+            color:#fff;
+      }
       
       .content {
           width:80%;
@@ -204,13 +251,13 @@ nav li a:hover {
     /*MOBILE STYLES*/
     @media screen and (max-width: 600px) {
         
-        h1 { font-size:1.4em;}
+        h1 { font-size:1.1em;}
         
-        h2 { font-size: 1.6em; padding: 10px 30px;}
+        h2 { font-size: 1.4em; padding: 10px 30px;}
         
-        h4 { font-size: 1.2em; padding: 10px 30px 80px }
+        h4 { font-size: 1em; padding: 10px 30px 40px; }
         
-        .details { padding: 0 30px;}
+        .details { font-size:0.9em; padding: 0 30px 10px;}
 
     }
   </style>
@@ -415,27 +462,34 @@ form.form p.no-label {
             
     <h4>A multi-disciplinary meeting to discuss the latest innovations in breast cancer care</h4>
 
+    <ul class="details">
+    <p>Thursday 8<sup>th</sup> June, 18:30 &ndash; 21:30<br />
+    <a href="https://www.google.com/maps/place/etc.venues+Prospero+House/@51.5026787,-0.0939833,15.86z/data=!3m1!5s0x487604a5825f2c63:0x991230991c8172c3!4m6!3m5!1s0x487604a75fcdea4f:0x3898b0fa0dd162e0!8m2!3d51.500664!4d-0.093809!16s%2Fg%2F1td0fzpx" target="_blank">etc.venues Prospero House, Borough Station, SE1 1GA</a></p>
+</ul>
 </header>
 </div>
-    
-<ul class="details">
-    <p>Thursday 8<sup>th</sup> June, 18:30 &ndash; 21:30 <span style="color:#FFBE46;">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span> <a href="https://www.google.com/maps/place/etc.venues+Prospero+House/@51.5026787,-0.0939833,15.86z/data=!3m1!5s0x487604a5825f2c63:0x991230991c8172c3!4m6!3m5!1s0x487604a75fcdea4f:0x3898b0fa0dd162e0!8m2!3d51.500664!4d-0.093809!16s%2Fg%2F1td0fzpx" target="_blank">etc.venues Prospero House, Borough Station, SE1 1GA</a></p>
-</ul>
 
-<div class="content">
+<div class="content-navy-wrapper">
+<div class="content-navy">
     
-    <h3 id="meeting">🗓️&nbsp; The meeting</h3>
+    <h3 id="meeting">Management of the Axilla</h3>
     
-    <p><span style="font-family:'ModernEra-Medium';">Join us for this inaugural national meeting, where we'll be analysing  the role of lymphatic tracers in sentinel lymph node biopsy, and looking to how we can continue to future-proof breast cancer staging.</span></p>
+    <div style="font-family:'ModernEra-Medium';margin:0 auto;padding:0;width:330px;height:2px;background:#ffbe46;"></div>
+    
+    <p style="padding-top:10px;"><span style="font-family:'ModernEra-Medium';">Join us for this inaugural national meeting, where we'll be analysing  the role of lymphatic tracers in sentinel lymph node biopsy, and looking to how we can continue to future-proof breast cancer staging.</span></p>
     
     <p>The meeting will provide a unique opportunity to network with expert local physicians, promote the highest standards of patient care and hear the latest experiences and data guiding the future direction for lymphatic mapping of breast cancer.</p>
     
     <p><img src="https://pardot.endomag.com/l/914031/2023-04-03/bzvc6r/914031/1680508091byMFC3rZ/10_Plenary_Example.jpg" style="max-width:330px;margin: 10px 0 10px;border-radius:20px;"/> 
     &nbsp;&nbsp; 
     <img src="https://pardot.endomag.com/l/914031/2023-04-03/bzvc6v/914031/1680508117rAbgmtbz/Lunch.jpg" style="max-width:330px;margin: 10px 0 10px;border-radius:20px;"/></p>
-       
+
+    </div>
+    </div>
+
+    <div class="content">
         
-    <h3 id="meeting">💬&nbsp; Programme</h3>
+    <h3 id="programme">💬&nbsp; Programme</h3>
         
     <p style="text-align:center;"><a href="https://pardot.endomag.com/l/914031/2023-04-03/bzvc4g/914031/1680507737Pz1nZfZy/london_meeting_agenda_final.pdf" target="_blank"><img src="https://pardot.endomag.com/l/914031/2023-04-11/bzygh2/914031/1681209755V7DLiIJY/london_axillary_meeting.png" alt="Management of the Axilla Agenda" width="100%" style="border-radius:10px 10px;box-shadow: 5px 5px #0a2b53;"/></a></p>
         

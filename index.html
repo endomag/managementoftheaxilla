@@ -261,6 +261,41 @@ nav li a:hover {
       footer a:hover {
           color:#bbb;
       }
+      
+.responsive-img {
+    width: 100%;
+    box-shadow: 5px 5px 10px #eeeeee;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+    .responsive-img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 10px 10px 10px #eeeeee;
+    }
+
+    /* Hover effect on desktop */
+    .responsive-img:hover {
+        box-shadow: 15px 15px 25px #eeeeee; /* Increase shadow */
+        transform: rotate(-1deg) scale(1.02); /* Tilt and grow the image slightly */
+
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .responsive-img {
+        width: 100%;
+        box-shadow: 5px 5px 10px #eeeeee;
+    }
+}
+
+
     
     
   </style>
@@ -283,6 +318,8 @@ nav li a:hover {
 	#meeting { font-size: 1.4em; }
 
     }
+      
+      
   </style>
   <style type="text/css">
     /*IPAD*/
@@ -498,7 +535,13 @@ form.form p.no-label {
     <p>Join us for our Surrey regional meeting, where we’ll be discussing and assessing the role of lymphatic tracers in sentinel lymph node biopsy.</p>
     <p>This is a unique opportunity to network with experts across the UK, share best practice for patient care, and hear the latest experiences and data guiding the future direction for breast cancer staging.</p>
 
-    <p><img src="https://pardot.endomag.com/l/914031/2024-08-29/c96n27/914031/1724925837g2P5azz4/Events_Reigate_Regional_Meeting_Agenda_Website_01.png" alt="Agenda" style="width:100%;box-shadow:5px 5px 10px #eeeeee;border:1px solid #eee;border-radius:15px;" /></p>
+<p>
+    <a href="https://pardot.endomag.com/l/914031/2024-08-29/c96n71/914031/1724928972dnWw0gKZ/management_of_the_axilla_reigate_agenda.pdf" target="_blank">
+        <img src="https://pardot.endomag.com/l/914031/2024-08-29/c96n27/914031/1724925837g2P5azz4/Events_Reigate_Regional_Meeting_Agenda_Website_01.png" 
+             alt="Agenda" 
+             class="responsive-img" />
+    </a>
+</p>
     </div>
     </div>
 
